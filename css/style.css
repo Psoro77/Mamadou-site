@@ -1,0 +1,128 @@
+/* ============================
+   MS Prestige Auto — Custom Styles
+   ============================ */
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Gold button */
+.btn-gold {
+    background: linear-gradient(135deg, #d4a843, #b8860b);
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.btn-gold:hover {
+    background: linear-gradient(135deg, #e0b84d, #c9952c);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px rgba(212, 168, 67, 0.3);
+}
+
+/* Hero overlay */
+.hero-overlay {
+    background: radial-gradient(ellipse at center bottom, transparent 0%, rgba(5, 5, 5, 0.7) 70%);
+}
+
+/* Navbar scroll effect */
+.navbar-scrolled {
+    background: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Car card hover */
+.car-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.animate-fade-in-up-delay {
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.3s forwards;
+}
+
+.animate-fade-in-up-delay-2 {
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.6s forwards;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form focus states */
+input:focus,
+select:focus,
+textarea:focus {
+    box-shadow: 0 0 0 2px rgba(212, 168, 67, 0.15);
+}
+
+/* Select dropdown arrow */
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23999' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+}
+
+/* Selection color */
+::selection {
+    background: rgba(212, 168, 67, 0.3);
+    color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
